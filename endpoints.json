@@ -1,0 +1,43 @@
+[
+    {
+        "endpoint": "/api/topics",
+        "description": "should give an array of all topics",
+        "available methods": "GET POST"
+    },
+    {
+        "endpoint": "/api/topics/:topic/articles",
+        "description": "responds with an array of article objects for a given topic",
+        "available methods": "GET POST"
+    },
+    {
+        "endpoint": "/api/articles",
+        "description": "responds with an array of article objects for a given topic",
+        "available methods": "GET POST"
+    },
+    {
+        "endpoint": "/api/articles/:article_id",
+        "description": "should respond with an article object by article id ",
+        "available methods": "GET PATCH DELETE"
+    },
+    {
+        "endpoint": "/api/articles/:article_id/comments",
+        "description": "should respond with an an array of comments for given article id",
+        "available methods": "GET POST"
+    },
+    {
+        "endpoint": "/api/articles/:article_id/comments/:comment_id",
+        "description": "allows user to either update or delete a comment",
+        "available methods": "PATCH DELETE"
+    },
+    {
+        "endpoint": "/api/users",
+        "description": "responds with an array of users",
+        "available methods": "GET"
+    },
+    {
+        "endpoint": "/api/users/username",
+        "description": "responds with a user object",
+        "available methods": "GET"
+    }
+]
+
