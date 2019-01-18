@@ -1,5 +1,5 @@
 // const { articleData } = require('../data/index');
-// const topicD = require('../data/test-data/topics');
+const topicD = require('../data/test-data/topics');
 
 function timeConverter(UNIX_timestamp) {
   return new Date(UNIX_timestamp);
