@@ -29,7 +29,7 @@ exports.formatComments = function (comments, articles) {
   });
 };
 
-exports.arrayOfSlugs = function () {
+exports.arrayOfSlugs = function (topicD) {
   return topicD.map(element => element.slug);
 };
 
