@@ -1,11 +1,11 @@
-const { articleData } = require('../data/index');
-const topicD = require('../data/test-data/topics');
+// const { articleData } = require('../data/index');
+// const topicD = require('../data/test-data/topics');
 
 function timeConverter(UNIX_timestamp) {
   return new Date(UNIX_timestamp);
 }
 
-exports.formatArticle = function () {
+exports.formatArticle = function (articleData) {
   return articleData
     .map(({ created_by, created_at, ...remainingArticleData }) => (
       {
