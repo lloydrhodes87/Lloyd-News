@@ -539,8 +539,8 @@ describe('/api', () => {
           expect(body.user).to.eql(userObj);
         });
     });
-    // it('GET status: 404 client has input a username that doesn\'t exist', () => request
-    //   .get('/api/users/butter_br')
-    //   .expect(404));
+    it('GET status: 404 client has input a username that doesn\'t exist', () => request
+      .get('/api/users/butter_br')
+      .expect(404));
   });
 });
