@@ -299,6 +299,20 @@ describe('/api', () => {
     it('GET status:400 client has input a string instead of a number as a query', () => request
       .get('/api/articles/?limit=string')
       .expect(400));
+    // it('POST status: 201 client has made a succesful post reqeust', () =>  {
+    //   const dataToSend = {
+    //     title: 'new title',
+    //     username: 'butter_bridge',
+    //     body: 'Well? Think about it.',
+    //   };
+    //   return request
+    //     .post('/api/articles')
+    //     .send(dataToSend)
+    //     .expect(201);
+  
+    
+      
+    // });
     it('PATCH status:200 should respond with successful patch of vote data', () => {
       const updateVote = {
         inc_votes: 10,

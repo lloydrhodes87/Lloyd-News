@@ -27,8 +27,6 @@
     "seed:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex seed:run --env production",
     "migrate:latest:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex migrate:latest --env production",
     "migrate:rollback:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex migrate:rollback --env production"
-        
-
   },
   "repository": {
     "type": "git",
@@ -43,6 +41,7 @@
   "homepage": "https://github.com/northcoders/BE2-NC-Knews#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "knex": "^0.15.2",
     "pg": "^7.6.1"
