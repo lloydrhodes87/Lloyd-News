@@ -229,7 +229,7 @@ exports.deleteCommentById = function (req, res, next) {
         .del()
         .returning('*')
         .then((comment) => {
-          if (!comment.length || article_id > len) {
+          if (!comment.length) {
             return Promise.reject({
               status: 404,
               message: 'article not found',
