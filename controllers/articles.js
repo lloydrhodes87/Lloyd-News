@@ -115,7 +115,7 @@ exports.deleteArticleById = function (req, res, next) {
           return res.status(204).send({});
         })
         .catch(err => next(err));
-    });
+    
 };
 
 exports.getCommentsByArticleId = function (req, res, next) {
