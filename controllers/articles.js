@@ -93,20 +93,20 @@ exports.updateVote = function (req, res, next) {
 };
 
 exports.deleteArticleById = function (req, res, next) {
-  return connection
-    .select('*')
-    .from('articles')
-    .then((articles) => {
-      const len = articles.length;
-      return len;
-    }).then((len) => {
-      const { article_id } = req.params;
+  // return connection
+  //   .select('*')
+  //   .from('articles')
+  //   .then((articles) => {
+  //     const len = articles.length;
+  //     return len;
+  //   }).then((len) => {
+  //     const { article_id } = req.params;
       return connection('articles')
         .where('articles.article_id', article_id)
         .del()
         .returning('*')
-        .then(() => {
-          if (article_id > len) {
+        .then((deleteCount) => {
+          if (!deleteCount) {
             return Promise.reject({
               status: 404,
               message: 'article not found',
