@@ -2,6 +2,7 @@ const connection = require('../db/connection');
 const { isValidSort } = require('../db/utils/index');
 
 exports.getArticles = function (req, res, next) {
+  console.log('getting articles...')
   const sort = isValidSort(req.query.sort_by);
   const {
     limit = 10,
