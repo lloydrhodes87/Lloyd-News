@@ -26,7 +26,7 @@
     "start": "node listen.js",
     "seed:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex seed:run --env production",
     "migrate:latest:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex migrate:latest --env production",
-    "migrate:rollback:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex migrate:rollback --env production"
+    "migr ate:rollback:prod": "DB_URL=$(heroku config:get DATABASE_URL) knex migrate:rollback --env production"
   },
   "repository": {
     "type": "git",

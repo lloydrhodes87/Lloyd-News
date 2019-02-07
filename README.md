@@ -115,7 +115,7 @@ npm test
 
 ## Deployment
 
-Hosted on [Heroku](nc-news-lrd.herokuapp.com)
+Hosted on [Heroku](https://lloyd-news.herokuapp.com/api)
 
 ## Built With
 

@@ -25,6 +25,7 @@ exports.getArticles = function (req, res, next) {
     .limit(numLimit)
     .groupBy('articles.article_id')
     .then((articles) => {
+      console.log(articles)
       if (typeof numLimit !== 'number' || typeof pNum !== 'number') {
         return Promise.reject({
           status: 400,
